@@ -14,18 +14,18 @@ kind: Pod
 spec:
   containers:
   - name: helm
-    image: vfarcic/helm:2.9.1
+    image: agileqatester/helm:2.9.1
     command: ["cat"]
     tty: true
     volumeMounts:
     - name: build-config
       mountPath: /etc/config
   - name: kubectl
-    image: vfarcic/kubectl
+    image: agileqatester/kubectl
     command: ["cat"]
     tty: true
   - name: oc
-    image: vfarcic/openshift-client
+    image: agileqatester/openshift-client
     command: ["cat"]
     tty: true
   - name: golang

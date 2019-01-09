@@ -16,7 +16,7 @@ spec:
       mountPath: /var/run/docker.sock
     workingDir: /workspace
   - name: kubectl
-    image: vfarcic/kubectl
+    image: agileqatester/kubectl
     command: ["sleep"]
     args: ["100000"]
     volumeMounts:
@@ -24,7 +24,7 @@ spec:
       mountPath: /workspace
     workingDir: /workspace
   - name: oc
-    image: vfarcic/openshift-client
+    image: agileqatester/openshift-client
     command: ["sleep"]
     args: ["100000"]
     volumeMounts:
